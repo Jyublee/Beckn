@@ -1,0 +1,316 @@
+2023-11-17T12:32:05.041Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T12:32:05.096Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T12:31:55.861Z","message_id":"a16a1547-48f1-422e-a113-e41f960a1e5f","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"descriptor":{"name":"man"}}}}}
+2023-11-17T12:32:05.175Z [test] info: 
+Looking Up in registry...!
+With URL:https://registry.becknprotocol.io/subscribers/lookup
+ Payload:{"subscriber_id":"mulearn-jenin-bap","unique_key_id":"mulearn-jenin-bap-key"}
+2023-11-17T12:32:05.403Z [test] info: subscribers: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:32:05.413Z [test] info: Signing String:==>
+(created): 1700224260
+(expires): 1700227860
+digest: BLAKE-512=KGlNmAiWZLCMbHWUbqvndDLnEDJ9sR0F70DWeYL+9+9kzN5kBtuvg3qSepKgq+fU6xQaJg8+tGuhn1piNHwLAw==
+
+
+2023-11-17T12:32:05.418Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-jenin-bap|mulearn-jenin-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700224260\",expires=\"1700227860\",headers=\"(created) (expires) digest\",signature=\"tP96vc0FnRut6XqQese1h1GScvEeoBYspyJL1bsarodeiT6k7h2ccqZkVwFMSxb0acZT+7dSzWNWrfHGbfHqBQ==\""
+2023-11-17T12:32:05.428Z [test] info: returning response from cache
+2023-11-17T12:32:05.429Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:32:13.755Z [test] info: Signing String:==>
+(created): 1700224273
+(expires): 1700227873
+digest: BLAKE-512=njUoa3T5kmCrNY/ly2SlekjIh0PwBMJzDL6yhDXxg6FgQhMtzsNtpzLY1f9ozoPnkfMpHsPTFQL3zAp2kHQk/g==
+
+
+2023-11-17T12:32:13.758Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700224273\",expires=\"1700227873\",headers=\"(created) (expires) digest\",signature=\"jBk9m4X8C/M03rHA3yQpd7v+lDW44vh4TJ+8/gIWe60gqFX0N1hymxVL4f3bQGRHJTnZSFT3gTMwDd/u+CXXBw==\""},"timeout":3000}
+
+
+2023-11-17T12:32:13.760Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T12:32:13.762Z [test] info: sending request to BG / BPP: https://mulearn-jenin-bap.loca.lt
+2023-11-17T12:32:13.763Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"a16a1547-48f1-422e-a113-e41f960a1e5f","ttl":"PT10M","timestamp":"2023-11-17T12:32:10.807Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T12:32:17.044Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:32:17.055Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T12:32:17.073Z [test] info: Response from Webhook:==>
+ {"message":{"ack":{"status":"ACK"}}}
+With Data
+{"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"a16a1547-48f1-422e-a113-e41f960a1e5f","ttl":"PT10M","timestamp":"2023-11-17T12:32:10.807Z"},"error":{"code":354845,"message":"Network call failed","type":"CORE-ERROR","data":[{"data":"No Response","status":500}]}}
+
+
+2023-11-17T12:40:06.688Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T12:40:06.690Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T12:39:55.531Z","message_id":"29ea6607-059b-4686-8147-c69c9025aed5","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"descriptor":{"name":"man"}}}}}
+2023-11-17T12:40:06.727Z [test] info: returning response from cache
+2023-11-17T12:40:06.728Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:40:06.732Z [test] info: Signing String:==>
+(created): 1700224740
+(expires): 1700228340
+digest: BLAKE-512=0eNPwimEsxh4HwXG2Hc3d66ivjPEMu+dZYz7brqXEiV2QPncQsVA0ly6fbtJ993oVSr2NUrP3kQ5Q5gZ+wMNuw==
+
+
+2023-11-17T12:40:06.736Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-jenin-bap|mulearn-jenin-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700224740\",expires=\"1700228340\",headers=\"(created) (expires) digest\",signature=\"07Zhh76KFPN5T6SkbqSSCLm7JT3eUU7OmqhSTsBoQnYk/VUp5PvTDav9hPPHU5gc/4dH1DecribqknWT9KutCA==\""
+2023-11-17T12:40:06.768Z [test] info: returning response from cache
+2023-11-17T12:40:06.769Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:40:15.187Z [test] info: Signing String:==>
+(created): 1700224755
+(expires): 1700228355
+digest: BLAKE-512=snIkCG4eJjDCqNK/VtNPTxjFIdS2ph0bO5rNi8yxCWfKHKXWbAEk543/G3shY1RBcfoltTuQOD9yGi6fm4DTkQ==
+
+
+2023-11-17T12:40:15.193Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700224755\",expires=\"1700228355\",headers=\"(created) (expires) digest\",signature=\"r0i6CN2kNfR1m8q5j57h1qa4QbZ8H1O1QuovxOoz5XXdH6dyrfhYvvZbQL/ptmVpsKgB9d1KlBiCCS/E/4s8BQ==\""},"timeout":3000}
+
+
+2023-11-17T12:40:15.196Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T12:40:15.199Z [test] info: sending request to BG / BPP: https://mulearn-jenin-bap.loca.lt
+2023-11-17T12:40:15.202Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"29ea6607-059b-4686-8147-c69c9025aed5","ttl":"PT10M","timestamp":"2023-11-17T12:40:11.813Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T12:40:19.363Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:40:19.369Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T12:40:19.377Z [test] info: Response from Webhook:==>
+ {"message":{"ack":{"status":"ACK"}}}
+With Data
+{"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"29ea6607-059b-4686-8147-c69c9025aed5","ttl":"PT10M","timestamp":"2023-11-17T12:40:11.813Z"},"error":{"code":354845,"message":"Network call failed","type":"CORE-ERROR","data":[{"data":"No Response","status":500}]}}
+
+
+2023-11-17T12:41:00.377Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T12:41:00.380Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T12:40:42.012Z","message_id":"237d1fed-5183-4408-b1fa-5125d1b8bc36","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"descriptor":{"name":"man"}}}}}
+2023-11-17T12:41:00.408Z [test] info: returning response from cache
+2023-11-17T12:41:00.409Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:41:00.411Z [test] info: Signing String:==>
+(created): 1700224785
+(expires): 1700228385
+digest: BLAKE-512=dNkwwJ4pPSZwKL9JV/vZIdTQsPdnwldNloeTfy4VfRiDBytMmQSqbg33DUU0FltzUr8/HImKcSs5pmvF8YVJTQ==
+
+
+2023-11-17T12:41:00.415Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-jenin-bap|mulearn-jenin-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700224785\",expires=\"1700228385\",headers=\"(created) (expires) digest\",signature=\"7+By9aOScQntHqlq8IWdkvU6snO5W1Lc5iIwiwhac5gXrSP3AVYq4lbeLWTZMxNmyMNSkmTR3kFJJe1VqZ3jDQ==\""
+2023-11-17T12:41:00.426Z [test] info: returning response from cache
+2023-11-17T12:41:00.427Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:41:07.949Z [test] info: Signing String:==>
+(created): 1700224807
+(expires): 1700228407
+digest: BLAKE-512=SaFv4Fyhsk7RuGxowifXKmWuLkE9rd/38ZxxB0UOg6IfddnvYRRJB/a4oCN3+hn9aro6LaXq+fVWdoQ3942EFA==
+
+
+2023-11-17T12:41:07.951Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700224807\",expires=\"1700228407\",headers=\"(created) (expires) digest\",signature=\"fjKlSaEOePyIe2rzeTUWZCroZfiZuaaOZh5IRKG4BPkVsYvZHRoWub+BfxcAgmwTS27TxlwfouaN3pmEUtNNAg==\""},"timeout":3000}
+
+
+2023-11-17T12:41:07.954Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T12:41:07.955Z [test] info: sending request to BG / BPP: https://mulearn-jenin-bap.loca.lt
+2023-11-17T12:41:07.956Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"237d1fed-5183-4408-b1fa-5125d1b8bc36","ttl":"PT10M","timestamp":"2023-11-17T12:41:05.205Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T12:41:14.469Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:41:14.470Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T12:41:14.479Z [test] info: Response from Webhook:==>
+ {"message":{"ack":{"status":"ACK"}}}
+With Data
+{"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"237d1fed-5183-4408-b1fa-5125d1b8bc36","ttl":"PT10M","timestamp":"2023-11-17T12:41:05.205Z"},"error":{"code":354845,"message":"Network call failed","type":"CORE-ERROR","data":[{"data":"No Response","status":500}]}}
+
+
+2023-11-17T12:41:38.069Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T12:41:38.072Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T12:41:30.557Z","message_id":"b569dc55-3529-4fdc-a01e-81eac3531e9d","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"tags":[{"descriptor":{"name":"skills"},"list":[{"value":"Agile"},{"value":"Figma"}],"display":true}]}}}}
+2023-11-17T12:41:38.087Z [test] info: returning response from cache
+2023-11-17T12:41:38.089Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-deva-bap","subscriber_url":"https://mulearn-deva-bap.loca.lt","type":"BAP","signing_public_key":"9GB9RyoAG2E5Fm30paYMcmCtZ1eYO1haBIKZipsNY40=","valid_until":"2024-01-01T04:09:00.000Z"}]
+2023-11-17T12:41:38.093Z [test] info: Signing String:==>
+(created): 1700224833
+(expires): 1700228433
+digest: BLAKE-512=lhWqhy3ISqQyGk4iuCvYaFpszoZGQnfX4+C7dBU0ltHvE9nLlArcMAGOFd2XpnQltyvHmMo4mVt2WIq2ZOY5jQ==
+
+
+2023-11-17T12:41:38.097Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-deva-bap|mulearn-deva-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700224833\",expires=\"1700228433\",headers=\"(created) (expires) digest\",signature=\"xI8mQ72tg+2aIHbXXp12dxiby+3SruTvEvGm86szNctKE9GVbSU/v2Hd21mTP/tpOvcL8bm+F0/9ncB1QGCgBw==\""
+2023-11-17T12:41:38.105Z [test] info: returning response from cache
+2023-11-17T12:41:38.107Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-deva-bap","subscriber_url":"https://mulearn-deva-bap.loca.lt","type":"BAP","signing_public_key":"9GB9RyoAG2E5Fm30paYMcmCtZ1eYO1haBIKZipsNY40=","valid_until":"2024-01-01T04:09:00.000Z"}]
+2023-11-17T12:41:45.379Z [test] info: Signing String:==>
+(created): 1700224845
+(expires): 1700228445
+digest: BLAKE-512=xTNhoRNI3r+JUWL/CPXDLzAVDt0VySpRWmC+QVWhBYOo/EBM9CqLdLNlsziuSTETnN37AXGD/4Duji2LzD/g/g==
+
+
+2023-11-17T12:41:45.381Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700224845\",expires=\"1700228445\",headers=\"(created) (expires) digest\",signature=\"Vbkkfd5/iuCsyhcgcE4epFPohCBiSJxC1l6+5Pc+tIReaFeEUPOwJeDCf/+WnFR/ATuovyGC2Ncy15yI5PQbBg==\""},"timeout":3000}
+
+
+2023-11-17T12:41:45.382Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T12:41:45.383Z [test] info: sending request to BG / BPP: https://mulearn-deva-bap.loca.lt
+2023-11-17T12:41:45.384Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"b569dc55-3529-4fdc-a01e-81eac3531e9d","ttl":"PT10M","timestamp":"2023-11-17T12:41:42.666Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T12:41:49.318Z [test] error: Result : Failed call to Subscriber: https://mulearn-deva-bap.loca.lt, 
+Status: 404, 
+Data: 404
+2023-11-17T12:41:49.320Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T12:41:49.329Z [test] info: Response from Webhook:==>
+ {"message":{"ack":{"status":"ACK"}}}
+With Data
+{"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"b569dc55-3529-4fdc-a01e-81eac3531e9d","ttl":"PT10M","timestamp":"2023-11-17T12:41:42.666Z"},"error":{"code":354845,"message":"Network call failed","type":"CORE-ERROR","data":[{"data":"No Response","status":500}]}}
+
+
+2023-11-17T12:44:41.207Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T12:44:41.212Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T12:44:34.817Z","message_id":"b698add7-8bc7-43da-b74e-f1989d63142c","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"tags":[{"descriptor":{"name":"skills"},"list":[{"value":"Agile"},{"value":"Figma"}],"display":true}]}}}}
+2023-11-17T12:44:41.227Z [test] info: returning response from cache
+2023-11-17T12:44:41.231Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-deva-bap","subscriber_url":"https://mulearn-deva-bap.loca.lt","type":"BAP","signing_public_key":"9GB9RyoAG2E5Fm30paYMcmCtZ1eYO1haBIKZipsNY40=","valid_until":"2024-01-01T04:09:00.000Z"}]
+2023-11-17T12:44:41.234Z [test] info: Signing String:==>
+(created): 1700225017
+(expires): 1700228617
+digest: BLAKE-512=d+t3f/W6VlibdLWz6EaBvdG6Xw2/l2s3zPIlbTRAtxh2NYCMSuH1c0XAkX+VGQN+2sq4Q5tH7d0fFRqoAD71PA==
+
+
+2023-11-17T12:44:41.236Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-deva-bap|mulearn-deva-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700225017\",expires=\"1700228617\",headers=\"(created) (expires) digest\",signature=\"0o4hr3qxk6N7bFQBR91S4DzpbBHKjOaYA4MsYryOJA7iDHuAcUYqkoxCkftjzCEqMOw7tPQWGA35CoXNWW/PBg==\""
+2023-11-17T12:44:41.247Z [test] info: returning response from cache
+2023-11-17T12:44:41.248Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-deva-bap","subscriber_url":"https://mulearn-deva-bap.loca.lt","type":"BAP","signing_public_key":"9GB9RyoAG2E5Fm30paYMcmCtZ1eYO1haBIKZipsNY40=","valid_until":"2024-01-01T04:09:00.000Z"}]
+2023-11-17T12:44:48.978Z [test] info: Signing String:==>
+(created): 1700225028
+(expires): 1700228628
+digest: BLAKE-512=49F7jdfTTO74R6NLQnIHo3UkNfzjUN9l8KuGnbODE+CAtjJtlW6LlO6vk6GC8ERwAUDRB0aNVX7rgiaioJVh+A==
+
+
+2023-11-17T12:44:48.981Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700225028\",expires=\"1700228628\",headers=\"(created) (expires) digest\",signature=\"OFao/Bp/UJWKRdiqk8De9WnT3Uzep6SOk180bO9mjmL8zDRC5uRu+h1tqPLnx6c9HVd1s/IyzRr3JYqwrLsTCQ==\""},"timeout":3000}
+
+
+2023-11-17T12:44:48.982Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T12:44:48.983Z [test] info: sending request to BG / BPP: https://mulearn-deva-bap.loca.lt
+2023-11-17T12:44:48.983Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"b698add7-8bc7-43da-b74e-f1989d63142c","ttl":"PT10M","timestamp":"2023-11-17T12:44:46.166Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T12:44:52.963Z [test] error: Result : Failed call to Subscriber: https://mulearn-deva-bap.loca.lt, 
+Status: 404, 
+Data: 404
+2023-11-17T12:44:52.965Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T12:44:52.974Z [test] info: Response from Webhook:==>
+ {"message":{"ack":{"status":"ACK"}}}
+With Data
+{"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"b698add7-8bc7-43da-b74e-f1989d63142c","ttl":"PT10M","timestamp":"2023-11-17T12:44:46.166Z"},"error":{"code":354845,"message":"Network call failed","type":"CORE-ERROR","data":[{"data":"No Response","status":500}]}}
+
+
+2023-11-17T12:46:06.087Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T12:46:06.088Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T12:45:54.021Z","message_id":"51ae4c74-837c-439c-8593-6a40f1b8793c","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"descriptor":{"name":"man"}}}}}
+2023-11-17T12:46:06.107Z [test] info: returning response from cache
+2023-11-17T12:46:06.108Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:46:06.111Z [test] info: Signing String:==>
+(created): 1700225098
+(expires): 1700228698
+digest: BLAKE-512=VKFAlmtPEp1rQxRmxfhbfAdH5iPtOGfjdRHuvQsXFCXEQB77L8Fl9urGEG7ARcmhmqQPlp/DQozyBwoB5LFhvw==
+
+
+2023-11-17T12:46:06.114Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-jenin-bap|mulearn-jenin-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700225098\",expires=\"1700228698\",headers=\"(created) (expires) digest\",signature=\"FNBv2CR4xDwid16cNVupFXt3shNEr0Acu5HGjH6CnZLHJxi8BR0jdURZs19uNHR/RMb+VF7FPb9sxHc6yP3ECg==\""
+2023-11-17T12:46:06.122Z [test] info: returning response from cache
+2023-11-17T12:46:06.124Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-jenin-bap","subscriber_url":"https://jenin-bap.loca.lt","type":"BAP","signing_public_key":"uMY8jKgMwUyx3GCvPOhatU4IfmO+Jte2MsYWFXad7M4=","valid_until":"2024-10-09T19:14:00.000Z"}]
+2023-11-17T12:46:13.689Z [test] info: Signing String:==>
+(created): 1700225113
+(expires): 1700228713
+digest: BLAKE-512=bJ2XaB9tVKMUsXMt508J+95ErxuoZVdwTk8UJpCdK9ar4VVm0kWfTCbqsUe3Wu36uF3r8RG8lAQfjFnYhvxAJg==
+
+
+2023-11-17T12:46:13.691Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700225113\",expires=\"1700228713\",headers=\"(created) (expires) digest\",signature=\"J+KQwNSnNT9p1CK8g8BIg8bngehf0NlLy1MNGernbPj1x13UXtYaD/WZudsx/68f861b8Cx6YPFmJ3FRhQDDAg==\""},"timeout":3000}
+
+
+2023-11-17T12:46:13.692Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T12:46:13.693Z [test] info: sending request to BG / BPP: https://mulearn-jenin-bap.loca.lt
+2023-11-17T12:46:13.693Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-jenin-bap","bap_uri":"https://mulearn-jenin-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"51ae4c74-837c-439c-8593-6a40f1b8793c","ttl":"PT10M","timestamp":"2023-11-17T12:46:11.166Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T12:46:19.545Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:46:19.546Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T12:47:05.635Z [test] error: MQ_ConnectionFailed: MQ Client Connection Failed For URL: amqp://tvast:password@127.0.0.1:5672
+ Error: Socket closed abruptly during opening handshake
+2023-11-17T12:47:46.450Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T12:47:46.518Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T12:47:46.521Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T12:47:46.521Z [test] info: Lookup Cache Initialized...
+2023-11-17T12:47:46.523Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T12:47:46.524Z [test] info: Request Cache Initialized...
+2023-11-17T12:47:48.191Z [test] info: Protocol Server started on PORT : 5005
+2023-11-17T12:47:48.191Z [test] info: Protocol Server Started Successfully
+2023-11-17T12:47:48.192Z [test] info: Mode: BPP
+2023-11-17T12:47:48.192Z [test] info: Gateway Type: NETWORK
+2023-11-17T13:03:55.925Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T13:03:55.981Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T13:03:55.983Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T13:03:55.984Z [test] info: Lookup Cache Initialized...
+2023-11-17T13:03:55.985Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T13:03:55.985Z [test] info: Request Cache Initialized...
+2023-11-17T13:03:57.611Z [test] info: Protocol Server started on PORT : 5005
+2023-11-17T13:03:57.612Z [test] info: Protocol Server Started Successfully
+2023-11-17T13:03:57.613Z [test] info: Mode: BPP
+2023-11-17T13:03:57.613Z [test] info: Gateway Type: NETWORK
+2023-11-17T13:05:26.433Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T13:05:26.517Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T13:05:26.519Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T13:05:26.520Z [test] info: Lookup Cache Initialized...
+2023-11-17T13:05:26.521Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T13:05:26.521Z [test] info: Request Cache Initialized...
+2023-11-17T13:05:28.087Z [test] info: Protocol Server started on PORT : 5005
+2023-11-17T13:05:28.088Z [test] info: Protocol Server Started Successfully
+2023-11-17T13:05:28.088Z [test] info: Mode: BPP
+2023-11-17T13:05:28.088Z [test] info: Gateway Type: NETWORK
+2023-11-17T13:06:08.852Z [test] info: 
+New Request txn_id bdb5ba09-2241-4f00-b434-73466cd06228
+2023-11-17T13:06:08.853Z [test] info: Response from BPP {"context":{"ttl":"PT10M","action":"search","timestamp":"2023-11-17T13:06:02.979Z","message_id":"b2068811-422c-43e6-af32-81cc62038e5a","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","domain":"dsep:talent","version":"1.1.0","bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}}},"message":{"intent":{"item":{"tags":[{"descriptor":{"name":"skills"},"list":[{"value":"Agile"},{"value":"Figma"}],"display":true}]}}}}
+2023-11-17T13:06:08.865Z [test] info: returning response from cache
+2023-11-17T13:06:08.866Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-deva-bap","subscriber_url":"https://mulearn-deva-bap.loca.lt","type":"BAP","signing_public_key":"9GB9RyoAG2E5Fm30paYMcmCtZ1eYO1haBIKZipsNY40=","valid_until":"2024-01-01T04:09:00.000Z"}]
+2023-11-17T13:06:08.869Z [test] info: Signing String:==>
+(created): 1700226304
+(expires): 1700229904
+digest: BLAKE-512=Do2bxmKoo/9Fqy9lQTXZk3Ne8psES7YOlnVvJQfQx55RHK4tA/gDYIHe6uTUQdArD8wCtv9t/ynaPpD10zyazw==
+
+
+2023-11-17T13:06:08.874Z [test] info: Header recieved from bpp: "Signature keyId=\"mulearn-deva-bap|mulearn-deva-bap-key|ed25519\",algorithm=\"ed25519\",created=\"1700226304\",expires=\"1700229904\",headers=\"(created) (expires) digest\",signature=\"b7nBlEtqaH1n2Um4otG8EPDIerzBuzTJjlVXs6RePuaFNXhpztRfXWLyYHcc2r0mEDPVjIwsZN/p8KMYXTdJAA==\""
+2023-11-17T13:06:08.881Z [test] info: returning response from cache
+2023-11-17T13:06:08.882Z [test] info: cachedResponse: [{"subscriber_id":"mulearn-deva-bap","subscriber_url":"https://mulearn-deva-bap.loca.lt","type":"BAP","signing_public_key":"9GB9RyoAG2E5Fm30paYMcmCtZ1eYO1haBIKZipsNY40=","valid_until":"2024-01-01T04:09:00.000Z"}]
+2023-11-17T13:06:14.257Z [test] info: Signing String:==>
+(created): 1700226314
+(expires): 1700229914
+digest: BLAKE-512=Lz6Ia8Dt+ITkYz6dQ+AhqjxI1wO80dJqksdxlrQ4ANehe0ABgIm26D51eH5rltmfh/cTOJS33R4KH/frwyq5CA==
+
+
+2023-11-17T13:06:14.259Z [test] info: Axios Config for Request:
+{"headers":{"authorization":"Signature keyId=\"mulearn-deva-bpp|mulearn-deva-bpp-key|ed25519\",algorithm=\"ed25519\",created=\"1700226314\",expires=\"1700229914\",headers=\"(created) (expires) digest\",signature=\"XwZxrNbvhMnHjBw+NL8E0OT5GkHKeOWKLTiziGygqSGOxjBUZyOpgLHknXL8I3LLsRxTig5feZsVwTO9aR+YDA==\""},"timeout":3000}
+
+
+2023-11-17T13:06:14.260Z [test] info: Attempt Number: 1 
+Action : on_search
+2023-11-17T13:06:14.260Z [test] info: sending request to BG / BPP: https://mulearn-deva-bap.loca.lt
+2023-11-17T13:06:14.260Z [test] info: Request Body: {"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"b2068811-422c-43e6-af32-81cc62038e5a","ttl":"PT10M","timestamp":"2023-11-17T13:06:12.734Z"},"message":{"catalog":{"descriptor":{"name":"Student Profiles"},"providers":[{"id":"289edce4-d002-4962-b311-4c025e22b4f6","descriptor":{"name":"MuLearn Talent pool app","short_desc":"MuLearn Talent pool App Pvt Ltd","images":[{"url":"https://mulearn.in/images/logo.png"}]},"fulfillments":[{"id":"ful-01","type":"virtual-meet","tracking":false},{"id":"ful-02","type":"physical-meet","tracking":false}],"items":[{"id":"1224","descriptor":{"name":"Mayank Bansal","short_desc":"Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ","long_desc":"Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"}]},"fulfillment_ids":["ful-01","ful-02"]},{"id":"1225","descriptor":{"name":"Ravi Prakash","short_desc":"Head of Architecture and Technology Ecosystem at FIDE (Previously Beckn Foundation). Genesis author of beckn protocol specification.","long_desc":"Digital transformation leader, architect of beckn protocol. 9+ years' experience in hardware, middleware, and software. ME in Embedded Systems, BTech in Electronics.","media":[{"mimetype":"application/pdf","url":"https://www.resume-link.com"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/1"},{"mimetype":"application/pdf","url":"https://www.certificate-link.com/2"}],"images":[{"url":"https://media.licdn.com/dms/image/C5103AQHUETtJK2ZqRw/profile-displayphoto-shrink_400_400/0/1558161034172?e=1705536000&v=beta&t=jxO7s1fvk8fcXPK7CmTcU_kVzkqY-SKriPzWGPgIETE"}]},"fulfillment_ids":["ful-01","ful-02"]}]}]}}}
+2023-11-17T13:06:23.339Z [test] error: Result : Failed call to Subscriber: https://mulearn-deva-bap.loca.lt, 
+Status: 500, 
+Data: undefined
+2023-11-17T13:06:23.340Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T13:06:23.345Z [test] info: Response from Webhook:==>
+ {"message":{"ack":{"status":"ACK"}}}
+With Data
+{"context":{"domain":"dsep:talent","action":"on_search","version":"1.1.0","bpp_id":"mulearn-deva-bpp","bpp_uri":"https://mulearn-deva-bpp.loca.lt","country":"IND","city":"std:080","location":{"country":{"name":"India","code":"IND"},"city":{"name":"Bangalore","code":"std:080"}},"bap_id":"mulearn-deva-bap","bap_uri":"https://mulearn-deva-bap.loca.lt","transaction_id":"bdb5ba09-2241-4f00-b434-73466cd06228","message_id":"b2068811-422c-43e6-af32-81cc62038e5a","ttl":"PT10M","timestamp":"2023-11-17T13:06:12.734Z"},"error":{"code":354845,"message":"Network call failed","type":"CORE-ERROR","data":[{"data":"No Response","status":500}]}}
+
+

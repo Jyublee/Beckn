@@ -1,0 +1,62 @@
+2023-11-17T08:31:54.218Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T08:31:54.278Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T08:31:54.281Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T08:31:54.282Z [test] info: Lookup Cache Initialized...
+2023-11-17T08:31:54.283Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T08:31:54.284Z [test] info: Request Cache Initialized...
+2023-11-17T08:31:55.972Z [test] info: Protocol Server started on PORT : 5004
+2023-11-17T08:31:55.973Z [test] info: Protocol Server Started Successfully
+2023-11-17T08:31:55.973Z [test] info: Mode: BPP
+2023-11-17T08:31:55.974Z [test] info: Gateway Type: CLIENT
+2023-11-17T08:32:07.146Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T08:34:50.607Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T08:34:50.677Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T08:34:50.680Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T08:34:50.681Z [test] info: Lookup Cache Initialized...
+2023-11-17T08:34:50.682Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T08:34:50.683Z [test] info: Request Cache Initialized...
+2023-11-17T08:34:52.148Z [test] info: Protocol Server started on PORT : 5004
+2023-11-17T08:34:52.148Z [test] info: Protocol Server Started Successfully
+2023-11-17T08:34:52.149Z [test] info: Mode: BPP
+2023-11-17T08:34:52.162Z [test] info: Gateway Type: CLIENT
+2023-11-17T08:35:03.820Z [test] info: 
+Webhook Triggered on:==> http://localhost:3005
+
+
+2023-11-17T08:59:03.580Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T08:59:03.714Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T08:59:03.718Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T08:59:03.720Z [test] info: Lookup Cache Initialized...
+2023-11-17T08:59:03.722Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T08:59:03.723Z [test] info: Request Cache Initialized...
+2023-11-17T08:59:06.168Z [test] info: Protocol Server started on PORT : 5004
+2023-11-17T08:59:06.169Z [test] info: Protocol Server Started Successfully
+2023-11-17T08:59:06.169Z [test] info: Mode: BPP
+2023-11-17T08:59:06.170Z [test] info: Gateway Type: CLIENT
+2023-11-17T08:59:21.350Z [test] info: 
+Webhook Triggered on:==> http://localhost:3017
+
+
+2023-11-17T09:00:10.068Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T09:00:10.165Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T09:00:10.169Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T09:00:10.171Z [test] info: Lookup Cache Initialized...
+2023-11-17T09:00:10.173Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T09:00:10.174Z [test] info: Request Cache Initialized...
+2023-11-17T09:00:12.325Z [test] info: Protocol Server started on PORT : 5004
+2023-11-17T09:00:12.326Z [test] info: Protocol Server Started Successfully
+2023-11-17T09:00:12.327Z [test] info: Mode: BPP
+2023-11-17T09:00:12.327Z [test] info: Gateway Type: CLIENT
+2023-11-17T09:01:33.218Z [test] info: MQ Client Connected For: 127.0.0.1
+2023-11-17T09:01:33.312Z [test] info: Mongo Client Connected For DB: ps
+2023-11-17T09:01:33.314Z [test] info: Redis Client Connected For DB: 11
+2023-11-17T09:01:33.315Z [test] info: Lookup Cache Initialized...
+2023-11-17T09:01:33.316Z [test] info: Redis Client Connected For DB: 12
+2023-11-17T09:01:33.317Z [test] info: Request Cache Initialized...
+2023-11-17T09:01:35.305Z [test] info: Protocol Server started on PORT : 5004
+2023-11-17T09:01:35.305Z [test] info: Protocol Server Started Successfully
+2023-11-17T09:01:35.306Z [test] info: Mode: BPP
+2023-11-17T09:01:35.306Z [test] info: Gateway Type: CLIENT

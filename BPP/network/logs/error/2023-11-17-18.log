@@ -1,0 +1,23 @@
+2023-11-17T12:32:17.044Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:40:19.363Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:41:14.469Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:41:49.318Z [test] error: Result : Failed call to Subscriber: https://mulearn-deva-bap.loca.lt, 
+Status: 404, 
+Data: 404
+2023-11-17T12:44:52.963Z [test] error: Result : Failed call to Subscriber: https://mulearn-deva-bap.loca.lt, 
+Status: 404, 
+Data: 404
+2023-11-17T12:46:19.545Z [test] error: Result : Failed call to Subscriber: https://mulearn-jenin-bap.loca.lt, 
+Status: 404, 
+Data: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /on_search</pre>\n</body>\n</html>\n"
+2023-11-17T12:47:05.635Z [test] error: MQ_ConnectionFailed: MQ Client Connection Failed For URL: amqp://tvast:password@127.0.0.1:5672
+ Error: Socket closed abruptly during opening handshake
+2023-11-17T13:06:23.339Z [test] error: Result : Failed call to Subscriber: https://mulearn-deva-bap.loca.lt, 
+Status: 500, 
+Data: undefined
